@@ -11,7 +11,7 @@ public class CountServiceImpl implements CountService {
     @Override
     public CountPojo getCountViaApiCall() {
 
-        CountPojo countPojo = restTemplate.getForObject("http://localhost:8081/countPojo", CountPojo.class);
+        CountPojo countPojo = restTemplate.getForObject("http://localhost:8081/count", CountPojo.class);
 
         return countPojo;
     }

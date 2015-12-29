@@ -18,7 +18,7 @@ public class GreetingController {
         CountPojo countPojo = countService.getCountViaApiCall();
         model.addAttribute("apiCallCount", countPojo.getCount());
 
-        return "countPojo";
+        return "greeting";
     }
 
 }
